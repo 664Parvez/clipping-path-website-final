@@ -19,5 +19,7 @@
     "react-compare-slider": "^2.2.0",
     "react-dom": "18.2.0",
     "react-snowfall": "^1.2.1"
+
   }
+
 }
