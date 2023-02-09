@@ -8,7 +8,7 @@ import Navbar from "../Components/Navbar"
 import Footer from "../Components/footer"
 
 export async function getServerSideProps () {
-    let res = await fetch("http://localhost:3000/api/portfolio-api")
+    let res = await fetch("https://clipping-path-website-final.vercel.app/api/portfolio-api")
     let data = await res.json()
 
     return {

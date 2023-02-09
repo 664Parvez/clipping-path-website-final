@@ -10,7 +10,7 @@ import ServiceCss from '../../styles/service.module.css'
 import Form from "../Components/submit_form"
 
 export async function getServerSideProps () {
-    const response = await fetch("http://localhost:3000/api/services/ghost-mannequine-service")
+    const response = await fetch("https://clipping-path-website-final.vercel.app/api/services/ghost-mannequine-service")
     const data = await response.json()
 
     return {

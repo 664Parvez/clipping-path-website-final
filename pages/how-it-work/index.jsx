@@ -11,7 +11,7 @@ import Footer from "../Components/footer"
 
 export async function getServerSideProps () {
 
-    const res = await fetch("http://localhost:3000/api/how-it-work")
+    const res = await fetch("https://clipping-path-website-final.vercel.app/api/how-it-work")
     const data = await res.json()
 
     return{
