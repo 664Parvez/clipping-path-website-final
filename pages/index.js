@@ -17,7 +17,7 @@ import Footer from "./Components/footer";
 export async function getServerSideProps () {
 
     try{
-        const response = await fetch("http://localhost:3000/api/home/home-all")
+        const response = await fetch("https://clipping-path-website-final.vercel.app/api/home/home-all")
         const data = await response.json()
         
         return {
@@ -45,12 +45,12 @@ const Home = ({data}) =>  {
 
     useEffect(() => {
 
-        axios.get('http://localhost:3000/api/home/home-work')
+        axios.get('https://clipping-path-website-final.vercel.app/api/home/home-work')
         .then((work) => {
             setOurWork(work.data)
         })
 
-        axios.get("http://localhost:3000/api/home/our-partner")
+        axios.get("https://clipping-path-website-final.vercel.app/api/home/our-partner")
         .then((partner) => {
             setOurPartner(partner.data)
         })
